@@ -27,9 +27,9 @@
            fetch="https://github.com/LineageOS"
            revision="refs/heads/lineage-18.1" />
 
-  <default revision="refs/tags/android-11.0.0_r29"
+  <default revision="refs/tags/android-11.0.0_r33"
            remote="aosp"
-           sync-j="4"
+           sync-j="6"
            sync-c="true" />
 
   <project path="build/make" name="platform/build" groups="pdk" >
@@ -862,5 +862,5 @@
   <!-- Custom repos -->
   <include name="snippets/remove.xml" />
   <include name="snippets/aex.xml" />
-
+  <include name="snippets/custom.xml" />
 </manifest>

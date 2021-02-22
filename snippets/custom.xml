@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>  
+
+  <remote name="elpaablo"
+          fetch="https://github.com/elpaablo"
+          revision="refs/heads/*" /> 
+  
+  <remote name="syberia-bb"
+          fetch="https://bitbucket.org/syberia-project"
+          revision="refs/heads/11.0" />
+           
+  <remote name="kowalski"
+          fetch="https://github.com/pengus77"
+          revision="aosp_r" />
+           
+  <remote name="crdroid"
+          fetch="https://github.com/crdroidandroid/"
+          revision="11.0" />
+
+  <remote name="lineage-18.1"
+          fetch="https://github.com/LineageOS"
+          revision="lineage-18.1" />
+
+  <remote name="lineage-caf"
+          fetch="https://github.com/LineageOS"
+          revision="lineage-18.1-caf" />
+
+  <remote name="lineage-caf-sdm845"
+          fetch="https://github.com/LineageOS"
+          revision="lineage-18.1-caf-sdm845" />
+
+  <!-- Custom additions -->
+  <project path="external/motorola/faceunlock" name="external_motorola_faceunlock" remote="syberia-bb" />
+  <project path="prebuilts/tools-custom" name="android_prebuilts_tools-lineage" remote="lineage-18.1" clone-depth="1" />
+  <project path="vendor/support" name="android_vendor_support" remote="arrow" />
+
+  <!-- CodeAurora additions -->
+  <project path="vendor/codeaurora/telephony" name="android_vendor_codeaurora_telephony" remote="lineage-18.1" />
+  <project path="vendor/qcom/opensource/cryptfs_hw" name="stx-staging/android_vendor_qcom_opensource_cryptfs_hw" remote="github" revision="11" />
+  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="stx-staging/android_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="github" revision="11" />
+
+  <!-- External -->
+  <project path="external/ant-wireless/ant_native" name="android_external_ant-wireless_ant_native" remote="lineage-18.1" />
+  <project path="external/ant-wireless/ant_service" name="android_external_ant-wireless_ant_service" remote="lineage-18.1" />
+  <project path="external/ant-wireless/antradio-library" name="android_external_ant-wireless_antradio-library" remote="lineage-18.1" />
+  
+
+  <!-- Hardware -->
+  <project path="hardware/qcom-caf/common" name="android_hardware_qcom-caf_common" remote="lineage-18.1" >
+    <!-- add guard for AOSP hardware/qcom dir -->
+    <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
+    <!-- for AOSP sdm845, we override os_pickup.mk -->
+    <linkfile src="os_pickup.mk" dest="hardware/qcom/sdm845/Android.mk" />
+    <!-- add guards for CAF repositories -->
+    <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/sdm845/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sdm845/Android.mk" />
+  </project>
+
+  <project path="hardware/qcom-caf/sdm845/display" name="android_hardware_qcom_display" remote="kowalski" />
+  <project path="hardware/qcom-caf/sdm845/audio" name="android_hardware_qcom_audio" remote="lineage-caf-sdm845" />
+  <project path="hardware/qcom-caf/sdm845/media" name="android_hardware_qcom_media" remote="lineage-caf-sdm845" />
+
+  <project path="hardware/qcom/audio" name="android_hardware_qcom_audio" remote="lineage-18.1" />
+  <project path="hardware/qcom/display" name="android_hardware_qcom_display" remote="lineage-18.1" />
+  <project path="hardware/qcom/media" name="android_hardware_qcom_media" remote="lineage-18.1" />
+  <project path="hardware/qcom/gps" name="android_hardware_qcom_gps" remote="lineage-18.1" />
+  <project path="vendor/qcom/opensource/power" name="android_vendor_qcom_opensource_power" remote="lineage-18.1"  />
+  <project path="hardware/qcom-caf/thermal" name="android_hardware_qcom_thermal" remote="lineage-18.1" />
+  <project path="hardware/qcom-caf/vr" name="android_hardware_qcom_vr" remote="lineage-18.1" />
+  <project path="hardware/qcom-caf/wlan" name="android_hardware_qcom_wlan" remote="lineage-caf" />
+
+  <!-- System -->
+  <project path="system/qcom" name="android_system_qcom" remote="lineage-18.1" />
+ 
+  <!-- Vendor -->
+  <project path="vendor/qcom/opensource/dataservices" name="android_vendor_qcom_opensource_dataservices" remote="lineage-18.1" />
+  <project path="vendor/qcom/opensource/interfaces" name="android_vendor_qcom_opensource_interfaces" remote="lineage-18.1" />
+  <project path="vendor/qcom/opensource/libfmjni" name="android_vendor_qcom_opensource_libfmjni" remote="lineage-18.1" />
+  <project path="vendor/qcom/opensource/thermal-engine" name="android_vendor_qcom_opensource_thermal-engine" remote="lineage-18.1" />
+  
+  <!-- Prebuilts -->
+  <project path="prebuilts/abi-dumps/vndk" name="prebuilts_abi-dumps_vndk" remote="kowalski" clone-depth="1" />
+   
+  <!-- Packages: import some apps from kowalski and crdroid -->
+  <project path="packages/apps/Dialer" name="android_packages_apps_Dialer" remote="crdroid" />
+  <project path="packages/apps/Messaging" name="android_packages_apps_Messaging" remote="crdroid" />
+  <project path="packages/apps/Contacts" name="android_packages_apps_Contacts" remote="crdroid" />
+  <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="elpaablo" revision="arrow-11.0" />
+  
+  <project path="packages/apps/Bluetooth" name="android_packages_apps_Bluetooth" remote="lineage-18.1" /> 
+  <project path="packages/apps/CustomDoze" name="android_packages_apps_CustomDoze" remote="elpaablo" revision="dev" />
+  <project path="packages/apps/Seedvault" name="android_packages_apps_Seedvault" remote="elpaablo" revision="dev" />
+  <project path="packages/apps/SetupWizard" name="android_packages_apps_SetupWizard" remote="elpaablo" revision="aex-11.0" />
+  
+   <!-- Other additions -->
+  <project path="external/hosts" name="StevenBlack/hosts" remote="github" revision="master" />
+</manifest>
+
