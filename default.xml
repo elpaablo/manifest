@@ -11,13 +11,13 @@
   <remote name="gitlab"
           fetch="https://gitlab.com" />
 
-  <default revision="refs/tags/android-13.0.0_r7"
+  <default revision="refs/tags/android-13.0.0_r11"
            remote="aosp"
            sync-j="4"
            sync-c="true"
            sync-f="true" />
 
-  <superproject name="platform/superproject" remote="aosp" revision="android-13.0.0_r7" />
+  <superproject name="platform/superproject" remote="aosp" revision="android-13.0.0_r11" />
   <contactinfo bugurl="go/repo-bug" />
 
   <project path="build/bazel" name="platform/build/bazel" groups="pdk" >
@@ -696,6 +696,7 @@
   <project path="hardware/google/gchips" name="platform/hardware/google/gchips" groups="pdk-lassen,pdk-gs-arm" />
   <project path="hardware/google/graphics/common" name="platform/hardware/google/graphics/common" groups="pdk-lassen,pdk-gs-arm" />
   <project path="hardware/google/graphics/gs101" name="platform/hardware/google/graphics/gs101" groups="pdk-lassen,pdk-gs-arm" />
+  <project path="hardware/google/graphics/gs201" name="platform/hardware/google/graphics/gs201" groups="cloudripper" />
   <project path="hardware/google/interfaces" name="platform/hardware/google/interfaces" groups="pdk" />
   <project path="hardware/google/pixel-sepolicy" name="platform/hardware/google/pixel-sepolicy" groups="generic_fs,pixel" />
   <project path="hardware/invensense" name="platform/hardware/invensense" groups="invensense,pdk" />
