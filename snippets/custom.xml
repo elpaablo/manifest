@@ -27,10 +27,11 @@
 
   <!--project path="frameworks/base" name="frameworks_base" remote="home" /-->
 
+  <project path="external/Camera" name="GrapheneOS/platform_external_Camera" remote="github" revision="13"/>
   <project path="external/faceunlock" name="stagos/external_faceunlock" remote="gitlab" revision="t13" />
 
   <project path="hardware/qcom-caf/sdm845/display" name="hardware_qcom_display" remote="home" revision="sdm845-caf" />
-  <project path="hardware/xiaomi" name="voidui-tiramisu/hardware_xiaomi" remote="github" revision="aosp-13" />
+  <project path="hardware/xiaomi" name="lineageos/android_hardware_xiaomi" remote="github" revision="lineage-20" />
 
   <project path="packages/apps/Contacts" name="ricedroid/android_packages_apps_Contacts" remote="github" revision="thirteen" />
   <project path="packages/apps/Eleven" name="ricedroid/android_packages_apps_Music" revision="twelve" />
