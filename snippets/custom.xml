@@ -28,7 +28,6 @@
   <!--project path="frameworks/base" name="frameworks_base" remote="home" /-->
 
   <project path="external/Camera" name="GrapheneOS/platform_external_Camera" remote="github" revision="13"/>
-  <project path="external/faceunlock" name="stagos/external_faceunlock" remote="gitlab" revision="t13" />
 
   <project path="hardware/qcom-caf/sdm845/display" name="hardware_qcom_display" remote="home" revision="sdm845-caf" />
   <project path="hardware/qcom-caf/sdm845/media" name="hardware_qcom_media" remote="home" revision="sdm845-caf" />
@@ -37,7 +36,6 @@
   <project path="packages/apps/Contacts" name="ricedroid/android_packages_apps_Contacts" remote="github" revision="thirteen" />
   <project path="packages/apps/Eleven" name="ricedroid/android_packages_apps_Music" revision="twelve" />
   <project path="packages/apps/ExactCalculator" name="crdroidandroid/android_packages_apps_ExactCalculator" remote="github" revision="13.0" />
-  <!--project path="packages/apps/FaceUnlockService" name="stagos/android_packages_apps_FaceUnlockService" remote="github" revision="t13" /-->
   <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="home" />
   <project path="packages/apps/Messaging" name="ricedroid/android_packages_apps_Messaging" remote="github" revision="thirteen" />
   <project path="packages/apps/SettingsIntelligence" name="lineageos/android_packages_apps_SettingsIntelligence" remote="github" revision="lineage-20.0" />
