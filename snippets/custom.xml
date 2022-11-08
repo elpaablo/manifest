@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote name="home"
+          fetch="https://github.com/elpaablo"
+          revision="aosp-13" />
+
+  <remote name="home-gitlab"
+          fetch="https://gitlab.com/elpaablo"
+          revision="aosp-13" />
+
+  <!--project path="art" name="art" remote="home" /-->
+  <!--project path="bionic" name="bionic" remote="home" /-->
+  <!--project path="build/make" name="build" remote="home">
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project-->
+  <!--project path="build/soong" name="build_soong" remote="home" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project-->
+
+  <!--project path="frameworks/base" name="frameworks_base" remote="home" /-->
+
+  <project path="external/Camera" name="GrapheneOS/platform_external_Camera" remote="github" revision="13"/>
+  <project path="external/faceunlock" name="stagos/external_faceunlock" remote="gitlab" revision="t13" />
+
+  <project path="hardware/qcom-caf/sdm845/display" name="hardware_qcom_display" remote="home" revision="sdm845-caf" />
+  <project path="hardware/qcom-caf/sdm845/media" name="hardware_qcom_media" remote="home" revision="sdm845-caf" />
+  <project path="hardware/xiaomi" name="lineageos/android_hardware_xiaomi" remote="github" revision="lineage-20" />
+
+  <project path="packages/apps/Contacts" name="ricedroid/android_packages_apps_Contacts" remote="github" revision="thirteen" />
+  <project path="packages/apps/Eleven" name="ricedroid/android_packages_apps_Music" revision="twelve" />
+  <project path="packages/apps/ExactCalculator" name="crdroidandroid/android_packages_apps_ExactCalculator" remote="github" revision="13.0" />
+  <!--project path="packages/apps/FaceUnlockService" name="stagos/android_packages_apps_FaceUnlockService" remote="github" revision="t13" /-->
+  <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="home" />
+  <project path="packages/apps/Messaging" name="ricedroid/android_packages_apps_Messaging" remote="github" revision="thirteen" />
+  <project path="packages/apps/SettingsIntelligence" name="lineageos/android_packages_apps_SettingsIntelligence" remote="github" revision="lineage-20.0" />
+
+  <project path="packages/apps/RepainterServicePriv" name="voidui-tiramisu/packages_apps_RepainterService" remote="github" revision="aosp-13"/>
+  <!--project path="packages/apps/Settings" name="packages_apps_Settings" remote="home" /-->
+  <!--project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" remote="home" /-->
+
+  <!-- Prebuilts repos - Snapdragon LLVM Clang -->
+  <project path="prebuilts/clang/host/linux-x86/clang-sdclang" name="voidui/snapdragon-clang" remote="github" revision="aosp-13" clone-depth="1" />
+
+  <!--project path="vendor/aosp" name="vendor_aosp" remote="home" /-->
+  <!--project path="vendor/gapps" name="vendor_gapps" remote="home-gitlab" /-->
+
+</manifest>
