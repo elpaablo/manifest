@@ -38,7 +38,7 @@
   <project path="packages/apps/Contacts" name="ricedroid/android_packages_apps_Contacts" remote="github" revision="thirteen" />
   <project path="packages/apps/Eleven" name="ricedroid/android_packages_apps_Music" remote="github" revision="twelve" />
   <project path="packages/apps/ExactCalculator" name="crdroidandroid/android_packages_apps_ExactCalculator" remote="github" revision="13.0" />
-  <project path="packages/apps/GameSpace" name="voidui-tiramisu/packages_apps_GameSpace" remote="github" revision="aosp-13" />
+  <project path="packages/apps/GameSpace" name="packages_apps_GameSpace" remote="home" />
   <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="home" />
   <project path="packages/apps/Messaging" name="ricedroid/android_packages_apps_Messaging" remote="github" revision="thirteen" />
   <project path="packages/apps/SettingsIntelligence" name="lineageos/android_packages_apps_SettingsIntelligence" remote="github" revision="lineage-20.0" />
