@@ -26,6 +26,7 @@
   </project>
 
   <project path="frameworks/base" name="frameworks_base" remote="home" />
+  <project path="frameworks/libs/systemui" name="frameworks_libs_systemui" remote="home" />
 
   <project path="external/arm-optimized-routines" name="external_arm-optimized-routines" remote="home" />
   <project path="external/Camera" name="GrapheneOS/platform_external_Camera" remote="github" revision="13"/>
