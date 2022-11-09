@@ -46,6 +46,7 @@
   <project path="packages/apps/RepainterServicePriv" name="voidui-tiramisu/packages_apps_RepainterService" remote="github" revision="aosp-13"/>
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="home" />
   <!--project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" remote="home" /-->
+  <project path="packages/services/OmniJaws" name="ricedroid/packages_services_OmniJaws" remote="github" revision="thirteen" />
 
   <!-- Prebuilts repos - Snapdragon LLVM Clang -->
   <!--project path="prebuilts/clang/host/linux-x86/clang-sdclang" name="voidui/snapdragon-clang" remote="github" revision="aosp-13" clone-depth="1" /-->
