@@ -60,7 +60,7 @@
 
   <project path="vendor/aosp" name="vendor_aosp" remote="home" />
   <project path="vendor/custom-preference" name="vendor_custom-preference" remote="home" />
-  <!--project path="vendor/gapps" name="vendor_gapps" remote="home-gitlab" /-->
+ <project path="vendor/gapps" name="vendor_gapps" remote="home-gitlab" clone-depth="1" />
   <project path="vendor/prebuilts" name="vendor_prebuilts" remote="home" />
 
 </manifest>
