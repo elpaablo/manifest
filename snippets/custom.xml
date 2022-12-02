@@ -40,6 +40,7 @@
 
   <project path="packages/apps/AlphaSettings" name="packages_apps_AlphaSettings" remote="home" />
   <project path="packages/apps/Contacts" name="ricedroid/android_packages_apps_Contacts" remote="github" revision="thirteen" />
+  <project path="packages/apps/DeskClock" name="ricedroid/android_packages_apps_DeskClock" remote="github" revision="thirteen" />
   <project path="packages/apps/Eleven" name="ricedroid/android_packages_apps_Music" remote="github" revision="twelve" />
   <project path="packages/apps/ExactCalculator" name="crdroidandroid/android_packages_apps_ExactCalculator" remote="github" revision="13.0" />
   <project path="packages/apps/GameSpace" name="packages_apps_GameSpace" remote="home" />
@@ -49,7 +50,7 @@
 
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="home" />
   <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" remote="home" />
-  <project path="packages/services/OmniJaws" name="ricedroid/packages_services_OmniJaws" remote="github" revision="thirteen" />
+  <project path="packages/apps/WallpaperPicker2" name="ricedroid/android_packages_apps_WallpaperPicker2" remote="github" revision="thirteen" />
   <project path="packages/inputmethods/LatinIME" name="lineageos/android_packages_inputmethods_LatinIME" remote="github" revision="lineage-20.0" />
 
   <!-- Prebuilts repos - Snapdragon LLVM Clang -->
