@@ -52,6 +52,7 @@
   <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" remote="home" />
   <project path="packages/apps/WallpaperPicker2" name="packages_apps_WallpaperPicker2" remote="home" />
   <project path="packages/inputmethods/LatinIME" name="lineageos/android_packages_inputmethods_LatinIME" remote="github" revision="lineage-20.0" />
+  <project path="packages/resources/devicesettings" name="packages_resources_devicesettings" remote="home" />
 
   <!-- Prebuilts repos - Snapdragon LLVM Clang -->
   <!--project path="prebuilts/clang/host/linux-x86/clang-sdclang" name="voidui/snapdragon-clang" remote="github" revision="aosp-13" clone-depth="1" /-->
