@@ -11,35 +11,18 @@
            fetch="https://github.com/yaap"
            revision="refs/heads/fifteen" />
 
+  <project path="build/bazel" name="build_bazel" remote="yaap" >
+    <linkfile src="bazel.WORKSPACE" dest="WORKSPACE" />
+    <linkfile src="bazel.BUILD" dest="BUILD" />
+  </project>
+  <project path="build/release" name="build_release" remote="yaap" />
+
   <!-- General -->
   <project path="art" name="art" remote="yaap" />
   <project path="bootable/deprecated-ota" name="bootable_deprecated-ota" remote="yaap" />
   <project path="bootable/recovery" name="bootable_recovery" remote="yaap" />
   <project path="bionic" name="bionic" remote="yaap" />
-  <project path="manifest" name="yaap/manifest" remote="github" revision="fifteen" />
 
-  <!-- Build -->
-  <project path="build/make" name="build_make" remote="yaap" >
-   <copyfile src="core/root.mk" dest="Makefile" />
-   <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
-   <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
-   <linkfile src="core" dest="build/core" />
-   <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
-   <linkfile src="target" dest="build/target" />
-   <linkfile src="tools" dest="build/tools" />
-  </project>
-  <project path="build/bazel" name="build_bazel" remote="yaap" >
-    <linkfile src="bazel.WORKSPACE" dest="WORKSPACE" />
-    <linkfile src="bazel.BUILD" dest="BUILD" />
-  </project>
-  <project path="build/soong" name="build_soong" remote="yaap" >
-   <linkfile src="root.bp" dest="Android.bp" />
-   <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
-  </project>
-  <project path="build/release" name="build_release" remote="yaap" />
-
-  <!-- Device -->
-  <project path="device/lineage/sepolicy" name="device_lineage_sepolicy" remote="yaap" />
   <project path="device/mediatek/sepolicy_vndr" name="device_mediatek_sepolicy_vndr" remote="yaap" />
   <project path="device/qcom/common" name="device_qcom_common" remote="yaap" />
   <project path="device/qcom/sepolicy_vndr/sm8650" name="device_qcom_sepolicy_vndr_sm8650" remote="yaap" />
@@ -70,7 +53,6 @@
 
   <!-- Frameworks -->
   <project path="frameworks/av" name="frameworks_av" remote="yaap" />
-  <project path="frameworks/base" name="frameworks_base" remote="yaap" />
   <project path="frameworks/libs/systemui" name="frameworks_libs_systemui" remote="yaap" />
   <project path="frameworks/minikin" name="frameworks_minikin" remote="yaap" />
   <project path="frameworks/native" name="frameworks_native" remote="yaap" />
@@ -84,7 +66,7 @@
   <project path="hardware/lineage/compat" name="hardware_lineage_compat" remote="yaap" />
   <project path="hardware/lineage/interfaces" name="hardware_lineage_interfaces" remote="yaap" />
   <project path="hardware/interfaces" name="hardware_interfaces" remote="yaap" />
-  <project path="hardware/qcom-caf/sm8150/audio" name="hardware_qcom-caf_sm8150_audio" remote="yaap" />
+<!--  <project path="hardware/qcom-caf/sm8150/audio" name="hardware_qcom-caf_sm8150_audio" remote="yaap" />
   <project path="hardware/qcom-caf/sm8150/display" name="hardware_qcom-caf_sm8150_display" remote="yaap" />
   <project path="hardware/qcom-caf/sm8150/media" name="hardware_qcom-caf_sm8150_media" remote="yaap" />
   <project path="hardware/qcom-caf/sm8250/audio" name="hardware_qcom-caf_sm8250_audio" remote="yaap" />
@@ -95,7 +77,7 @@
   <project path="hardware/qcom-caf/sm8650/dataipa" name="vendor_qcom_opensource_dataipa-sm8650" remote="yaap" />
   <project path="hardware/qcom-caf/sm8650/data-ipa-cfg-mgr" name="vendor_qcom_opensource_data-ipa-cfg-mgr-sm8650" remote="yaap" />
   <project path="hardware/qcom-caf/sm8650/display" name="hardware_qcom-caf_sm8650_display" remote="yaap" />
-  <project path="hardware/qcom-caf/sm8650/media" name="hardware_qcom-caf_sm8650_media" remote="yaap" />
+  <project path="hardware/qcom-caf/sm8650/media" name="hardware_qcom-caf_sm8650_media" remote="yaap" />-->
   <project path="hardware/qcom-caf/wlan" name="hardware_qcom-caf_wlan" remote="yaap" />
   <project path="hardware/qcom-caf/common" remote="yaap" name="hardware_qcom-caf_common" >
     <!-- add guard for AOSP hardware/qcom dir -->
@@ -155,7 +137,6 @@
   <project path="packages/apps/RepainterServicePriv" name="kdrag0n/android_packages_apps_RepainterServicePriv" remote="github" revision="main" />
   <project path="packages/apps/Ripple" name="CalyxOS/platform_packages_apps_Ripple" remote="github" revision="android14" />
   <project path="packages/apps/Seedvault" name="packages_apps_Seedvault" remote="yaap" />
-  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="yaap" />
   <project path="packages/apps/Settings/YASP" name="packages_apps_YASP" remote="yaap" />
   <project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" remote="yaap" />
   <project path="packages/apps/SetupWizard" name="packages_apps_SetupWizard" remote="yaap" />
@@ -212,6 +193,5 @@
   <project path="vendor/qcom/common" name="yaosp/vendor_qcom_common" remote="gitlab" revision="fifteen" />
   <project path="vendor/microg" name="vendor_microg" remote="yaap" />
   <project path="vendor/themes" name="vendor_themes" remote="yaap" />
-  <project path="vendor/yaap" name="vendor_yaap" remote="yaap" />
 
 </manifest>
