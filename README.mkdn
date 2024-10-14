@@ -1,4 +1,4 @@
-YAAP
+AlphaDroid 3.0 (WIP)
 ==============
 
 Getting Started
@@ -7,14 +7,14 @@ Getting Started
 To get started with Android, you'll need to get
 familiar with [Git and Repo](http://source.android.com/source/using-repo.html).
 
-To initialize your local repository using the YAAP trees, use a command like this:
+To initialize your local repository using the AlphaDroid trees, use a command like this:
 
 ```bash
-repo init -u https://github.com/yaap/manifest.git -b fifteen --git-lfs
+repo init -u https://github.com/elpaablo/manifest.git -b alpha-15-wip --git-lfs
 ```
 Then to sync up:
 ```bash
-repo sync -j$(nproc --all) --no-tags --no-clone-bundle --current-branch
+repo sync
 ```
 
 Building the source
@@ -24,5 +24,5 @@ The source at YAAP is well configured for building.
 
 ```bash
 source build/envsetup.sh
-lunch yaap_device-user && m yaap
+lunch alpha_device-user && m alpha
 ```
