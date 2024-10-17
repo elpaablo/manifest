@@ -20,8 +20,6 @@ repo sync
 Building the source
 ---------------
 
-The source at YAAP is well configured for building.
-
 ```bash
 source build/envsetup.sh
 lunch alpha_device-user && m alpha
