@@ -37,7 +37,7 @@
   <!--  <project path="art" name="art" groups="pdk" remote="alpha" />
   <project path="bionic" name="bionic" groups="pdk" remote="alpha" />
   -->
-  <!--<project path="bootable/recovery" name="bootable_recovery" groups="pdk" remote="alpha" />-->
+  <project path="bootable/recovery" name="bootable_recovery" groups="pdk" remote="elpaablo" revision="alpha-15.0.0_r2" />
 
   <!-- Build -->
   <project path="build/make" name="build_make" remote="alpha" >
@@ -59,14 +59,15 @@
   <project path="device/alpha/sepolicy" name="device_alpha_sepolicy" remote="alpha" />
   <!--<project path="device/qcom/sepolicy_vndr/legacy-um" name="device_qcom_sepolicy_vndr" groups="qcom,lahaina" remote="alpha" />-->
 
-  <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="elpaablo" />
+  <!--<project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="elpaablo" revision="alpha-15.0.0_r2" />-->
   <!--<project path="frameworks/native" name="frameworks_native" groups="pdk" remote="alpha" />-->
+  <project path="frameworks/base" name="platform/frameworks/base" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
 
   <project path="packages/apps/AlphaSettings" name="packages_apps_AlphaSettings" remote="elpaablo" />
   <!--<project path="packages/apps/AlphaWallpapers" name="packages_apps_AlphaWallpapers" groups="pdk-fs" remote="alpha" />-->
   <!--<project path="packages/apps/GameSpace" name="packages_apps_GameSpace" remote="alpha" />
   <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" groups="pdk-fs" remote="alpha" />-->
-  <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="elpaablo" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="elpaablo" revision="alpha-15.0.0_r2" />
   <!--project path="packages/apps/SetupWizard" name="packages_apps_SetupWizard" remote="alpha" />-->
   <!--<project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" groups="pdk-fs" remote="alpha" />-->
   <!--<project path="packages/apps/Updater" name="packages_apps_Updater" remote="alpha" />-->
