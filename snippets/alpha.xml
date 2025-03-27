@@ -17,24 +17,25 @@
            fetch="https://gitlab.com/alphadroid-project"
            sync-c="true"
            sync-j="4"
-           revision="refs/heads/alpha-15.1" />
-
-  <remote name="alpha-gitea"
-          fetch="git@gitea.com:alphadroid-project/"
-          sync-c="true"
-          sync-j="4"
-          revision="refs/heads/alpha-15.1" />
-
-  <remote name="alpha-codeberg"
-          fetch="https://codeberg.org/alphadroid-project/" />
+           revision="refs/heads/alpha-15.2" />
 
   <remote  name="alpha-devices"
            fetch="https://github.com/alphadroid-devices"
            sync-c="true"
            sync-j="4"
-           revision="refs/heads/alpha-15.1" />
+           revision="refs/heads/alpha-15.2" />
 
-  <project path="manifest" name="manifest" remote="alpha" />
+  <remote name="alpha-gitea"
+          fetch="git@gitea.com:alphadroid-project/" />
+
+  <remote name="alpha-codeberg"
+          fetch="https://codeberg.org/alphadroid-project/"
+          sync-c="true"
+          sync-j="4"
+          revision="refs/heads/alpha-15.2" />
+
+
+  <project path="manifest" name="manifest" remote="alpha-codeberg" />
 
   <project path="art" name="art" groups="pdk" remote="alpha" />
   <project path="bionic" name="bionic" groups="pdk" remote="alpha" />
@@ -77,14 +78,11 @@
   <project path="hardware/lineage/compat" name="hardware_lineage_compat" remote="alpha" />
   <project path="hardware/lineage/interfaces" name="hardware_lineage_interfaces" remote="alpha" />
 
-  <project path="lineage-sdk" name="lineage-sdk" remote="alpha" />
-
   <project path="packages/apps/AlphaSettings" name="packages_apps_AlphaSettings" remote="alpha" />
   <project path="packages/apps/FaceUnlock" name="packages_apps_FaceUnlock" remote="alpha-gitlab" />
   <project path="packages/apps/Backgrounds" name="packages_apps_Backgrounds" remote="alpha" />
   <project path="packages/apps/GameSpace" name="packages_apps_GameSpace" remote="alpha" />
   <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" groups="pdk-fs,sysui-studio,pdk-cw-tvc" remote="alpha" />
-  <project path="packages/apps/LineageParts" name="packages_apps_LineageParts" remote="alpha" />
   <project path="packages/apps/LMOFreeForm" name="packages_apps_LMOFreeForm" remote="alpha" />
   <project path="packages/apps/OmniStyle" name="packages_apps_OmniStyle" remote="alpha" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs,pdk-cw-tvc" remote="alpha" />
